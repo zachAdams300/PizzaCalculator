@@ -16,7 +16,48 @@
 		8C3B46492B6631C8005E7230 /* TextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B46482B6631C8005E7230 /* TextRow.swift */; };
 		8C3B464B2B6633C7005E7230 /* PoolishRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */; };
 		8C3B464D2B6635A3005E7230 /* QuickRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */; };
+		8CA35B572B88314100C17945 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B562B88314100C17945 /* Instruction.swift */; };
+		8CA35B592B8866B500C17945 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B582B8866B500C17945 /* ContentView-ViewModel.swift */; };
+		8CA35B5C2B88674300C17945 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B5B2B88674300C17945 /* NotificationManager.swift */; };
+		8CA35B5E2B886BB100C17945 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B5D2B886BB100C17945 /* Recipe.swift */; };
+		8CA35B612B886C2D00C17945 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B602B886C2D00C17945 /* TimeIntervalExtensions.swift */; };
+		8CA35B632B88795000C17945 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B622B88795000C17945 /* UserDefaultsManager.swift */; };
+		8CA35B6C2B887DE500C17945 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA35B6B2B887DE500C17945 /* WidgetKit.framework */; };
+		8CA35B6E2B887DE500C17945 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA35B6D2B887DE500C17945 /* SwiftUI.framework */; };
+		8CA35B712B887DE500C17945 /* PizzaLiveTimerBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B702B887DE500C17945 /* PizzaLiveTimerBundle.swift */; };
+		8CA35B732B887DE500C17945 /* PizzaLiveTimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B722B887DE500C17945 /* PizzaLiveTimerLiveActivity.swift */; };
+		8CA35B752B887DE500C17945 /* PizzaLiveTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B742B887DE500C17945 /* PizzaLiveTimer.swift */; };
+		8CA35B772B887DE500C17945 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B762B887DE500C17945 /* AppIntent.swift */; };
+		8CA35B792B887DE600C17945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA35B782B887DE600C17945 /* Assets.xcassets */; };
+		8CA35B7D2B887DE600C17945 /* PizzaLiveTimerExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8CA35B692B887DE500C17945 /* PizzaLiveTimerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CA35B842B888E3D00C17945 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B832B888E3D00C17945 /* Ingredient.swift */; };
+		8CA35B872B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B862B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift */; };
+		8CA35B882B88FD9100C17945 /* PizzaLiveTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA35B862B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CA35B7B2B887DE600C17945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C3B462B2B663134005E7230 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CA35B682B887DE500C17945;
+			remoteInfo = PizzaLiveTimerExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CA35B812B887DE600C17945 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CA35B7D2B887DE600C17945 /* PizzaLiveTimerExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8C3B46332B663134005E7230 /* PizzaCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +70,24 @@
 		8C3B46482B6631C8005E7230 /* TextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRow.swift; sourceTree = "<group>"; };
 		8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolishRecipe.swift; sourceTree = "<group>"; };
 		8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRecipe.swift; sourceTree = "<group>"; };
+		8CA35B562B88314100C17945 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		8CA35B582B8866B500C17945 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		8CA35B5B2B88674300C17945 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		8CA35B5D2B886BB100C17945 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		8CA35B602B886C2D00C17945 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		8CA35B622B88795000C17945 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		8CA35B642B887D9600C17945 /* PizzaCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PizzaCalculator.entitlements; sourceTree = "<group>"; };
+		8CA35B692B887DE500C17945 /* PizzaLiveTimerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PizzaLiveTimerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA35B6B2B887DE500C17945 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8CA35B6D2B887DE500C17945 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8CA35B702B887DE500C17945 /* PizzaLiveTimerBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaLiveTimerBundle.swift; sourceTree = "<group>"; };
+		8CA35B722B887DE500C17945 /* PizzaLiveTimerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaLiveTimerLiveActivity.swift; sourceTree = "<group>"; };
+		8CA35B742B887DE500C17945 /* PizzaLiveTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaLiveTimer.swift; sourceTree = "<group>"; };
+		8CA35B762B887DE500C17945 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		8CA35B782B887DE600C17945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CA35B7A2B887DE600C17945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA35B832B888E3D00C17945 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		8CA35B862B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaLiveTimerAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,13 +98,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CA35B662B887DE500C17945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA35B6E2B887DE500C17945 /* SwiftUI.framework in Frameworks */,
+				8CA35B6C2B887DE500C17945 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8C3B462A2B663134005E7230 = {
 			isa = PBXGroup;
 			children = (
+				8CA35B852B88FD0200C17945 /* Shared */,
 				8C3B46352B663134005E7230 /* PizzaCalculator */,
+				8CA35B6F2B887DE500C17945 /* PizzaLiveTimer */,
+				8CA35B6A2B887DE500C17945 /* Frameworks */,
 				8C3B46342B663134005E7230 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8C3B46332B663134005E7230 /* PizzaCalculator.app */,
+				8CA35B692B887DE500C17945 /* PizzaLiveTimerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,10 +133,13 @@
 		8C3B46352B663134005E7230 /* PizzaCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				8CA35B822B8887EB00C17945 /* Models */,
+				8CA35B642B887D9600C17945 /* PizzaCalculator.entitlements */,
+				8CA35B5F2B886C1200C17945 /* Extensions */,
+				8CA35B5A2B88672F00C17945 /* Managers */,
 				8C3B46362B663134005E7230 /* PizzaCalculatorApp.swift */,
 				8C3B46382B663134005E7230 /* ContentView.swift */,
-				8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */,
-				8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */,
+				8CA35B582B8866B500C17945 /* ContentView-ViewModel.swift */,
 				8C3B46442B66314D005E7230 /* PoolishRecipeFormSection.swift */,
 				8C3B46462B663154005E7230 /* QuickRecipeForm.swift */,
 				8C3B46482B6631C8005E7230 /* TextRow.swift */,
@@ -82,6 +157,65 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8CA35B5A2B88672F00C17945 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA35B5B2B88674300C17945 /* NotificationManager.swift */,
+				8CA35B622B88795000C17945 /* UserDefaultsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8CA35B5F2B886C1200C17945 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CA35B602B886C2D00C17945 /* TimeIntervalExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8CA35B6A2B887DE500C17945 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CA35B6B2B887DE500C17945 /* WidgetKit.framework */,
+				8CA35B6D2B887DE500C17945 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CA35B6F2B887DE500C17945 /* PizzaLiveTimer */ = {
+			isa = PBXGroup;
+			children = (
+				8CA35B702B887DE500C17945 /* PizzaLiveTimerBundle.swift */,
+				8CA35B722B887DE500C17945 /* PizzaLiveTimerLiveActivity.swift */,
+				8CA35B742B887DE500C17945 /* PizzaLiveTimer.swift */,
+				8CA35B762B887DE500C17945 /* AppIntent.swift */,
+				8CA35B782B887DE600C17945 /* Assets.xcassets */,
+				8CA35B7A2B887DE600C17945 /* Info.plist */,
+			);
+			path = PizzaLiveTimer;
+			sourceTree = "<group>";
+		};
+		8CA35B822B8887EB00C17945 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */,
+				8CA35B5D2B886BB100C17945 /* Recipe.swift */,
+				8CA35B832B888E3D00C17945 /* Ingredient.swift */,
+				8CA35B562B88314100C17945 /* Instruction.swift */,
+				8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CA35B852B88FD0200C17945 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8CA35B862B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,15 +226,34 @@
 				8C3B462F2B663134005E7230 /* Sources */,
 				8C3B46302B663134005E7230 /* Frameworks */,
 				8C3B46312B663134005E7230 /* Resources */,
+				8CA35B812B887DE600C17945 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8CA35B7C2B887DE600C17945 /* PBXTargetDependency */,
 			);
 			name = PizzaCalculator;
 			productName = PizzaCalculator;
 			productReference = 8C3B46332B663134005E7230 /* PizzaCalculator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8CA35B682B887DE500C17945 /* PizzaLiveTimerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA35B7E2B887DE600C17945 /* Build configuration list for PBXNativeTarget "PizzaLiveTimerExtension" */;
+			buildPhases = (
+				8CA35B652B887DE500C17945 /* Sources */,
+				8CA35B662B887DE500C17945 /* Frameworks */,
+				8CA35B672B887DE500C17945 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzaLiveTimerExtension;
+			productName = PizzaLiveTimerExtension;
+			productReference = 8CA35B692B887DE500C17945 /* PizzaLiveTimerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +266,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					8C3B46322B663134005E7230 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					8CA35B682B887DE500C17945 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -131,6 +287,7 @@
 			projectRoot = "";
 			targets = (
 				8C3B46322B663134005E7230 /* PizzaCalculator */,
+				8CA35B682B887DE500C17945 /* PizzaLiveTimerExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CA35B672B887DE500C17945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA35B792B887DE600C17945 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -154,15 +319,43 @@
 			files = (
 				8C3B464B2B6633C7005E7230 /* PoolishRecipe.swift in Sources */,
 				8C3B46492B6631C8005E7230 /* TextRow.swift in Sources */,
+				8CA35B842B888E3D00C17945 /* Ingredient.swift in Sources */,
+				8CA35B5C2B88674300C17945 /* NotificationManager.swift in Sources */,
+				8CA35B872B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift in Sources */,
+				8CA35B632B88795000C17945 /* UserDefaultsManager.swift in Sources */,
 				8C3B46452B66314D005E7230 /* PoolishRecipeFormSection.swift in Sources */,
 				8C3B46472B663154005E7230 /* QuickRecipeForm.swift in Sources */,
+				8CA35B592B8866B500C17945 /* ContentView-ViewModel.swift in Sources */,
 				8C3B46392B663134005E7230 /* ContentView.swift in Sources */,
+				8CA35B612B886C2D00C17945 /* TimeIntervalExtensions.swift in Sources */,
 				8C3B46372B663134005E7230 /* PizzaCalculatorApp.swift in Sources */,
+				8CA35B572B88314100C17945 /* Instruction.swift in Sources */,
 				8C3B464D2B6635A3005E7230 /* QuickRecipe.swift in Sources */,
+				8CA35B5E2B886BB100C17945 /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA35B652B887DE500C17945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA35B882B88FD9100C17945 /* PizzaLiveTimerAttributes.swift in Sources */,
+				8CA35B752B887DE500C17945 /* PizzaLiveTimer.swift in Sources */,
+				8CA35B772B887DE500C17945 /* AppIntent.swift in Sources */,
+				8CA35B732B887DE500C17945 /* PizzaLiveTimerLiveActivity.swift in Sources */,
+				8CA35B712B887DE500C17945 /* PizzaLiveTimerBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CA35B7C2B887DE600C17945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CA35B682B887DE500C17945 /* PizzaLiveTimerExtension */;
+			targetProxy = 8CA35B7B2B887DE600C17945 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8C3B463F2B663136005E7230 /* Debug */ = {
@@ -287,13 +480,16 @@
 		8C3B46422B663136005E7230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PizzaCalculator/PizzaCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PizzaCalculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,13 +511,16 @@
 		8C3B46432B663136005E7230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PizzaCalculator/PizzaCalculator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PizzaCalculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +533,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.zack.adams.PizzaCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CA35B7F2B887DE600C17945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PizzaLiveTimer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PizzaLiveTimer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zack.adams.PizzaCalculator.PizzaLiveTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CA35B802B887DE600C17945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PizzaLiveTimer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PizzaLiveTimer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zack.adams.PizzaCalculator.PizzaLiveTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,6 +608,15 @@
 			buildConfigurations = (
 				8C3B46422B663136005E7230 /* Debug */,
 				8C3B46432B663136005E7230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CA35B7E2B887DE600C17945 /* Build configuration list for PBXNativeTarget "PizzaLiveTimerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA35B7F2B887DE600C17945 /* Debug */,
+				8CA35B802B887DE600C17945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct QuickRecipe {
+struct QuickRecipe: Recipe {
+    static let instructions: [Instruction] = []
+    
     let numPizzas: Int
     
     var waterGrams: Double {
