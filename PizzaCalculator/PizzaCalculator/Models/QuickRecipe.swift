@@ -8,31 +8,19 @@
 import Foundation
 
 struct QuickRecipe: Recipe {
-    static let instructions: [Instruction] = []
+    var numPizzas: Int
     
-    let numPizzas: Int
+    static let instructions: [Instruction] = [
+        
+    ]
     
-    var waterGrams: Double {
-        return Double(numPizzas) * 160
-    }
-    
-    var yeastGrams: Double {
-        return Double(numPizzas) * 3.5
-    }
-    
-    var sugarGrams: Double {
-        return Double(numPizzas) * 7.5
-    }
-    
-    var oliveOilGrams: Double {
-        return Double(numPizzas) * 15
-    }
-    
-    var flourGrams: Double {
-        return Double(numPizzas) * 225
-    }
-    
-    var saltTeaspoons: Int {
-        return numPizzas
-    }
+    var ingredients: [Ingredient] { [
+       Ingredient(name: "Water", amount: Double(160 * numPizzas), units: "g"),
+       Ingredient(name: "Yeast", amount: 3.5 * Double(numPizzas), units: "g"),
+       Ingredient(name: "Sugar", amount: 7.5 * Double(numPizzas), units: "g"),
+       Ingredient(name: "Olive Oil", amount: Double(15 * numPizzas), units: "g"),
+       Ingredient(name: "Bread Flour", amount: Double(225 * numPizzas), units: "g"),
+       Ingredient(name: "Salt", amount: Double(numPizzas), units: "teaspoons"),
+       ]
+   }
 }

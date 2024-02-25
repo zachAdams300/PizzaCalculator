@@ -11,8 +11,6 @@
 		8C3B46392B663134005E7230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B46382B663134005E7230 /* ContentView.swift */; };
 		8C3B463B2B663136005E7230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B463A2B663136005E7230 /* Assets.xcassets */; };
 		8C3B463E2B663136005E7230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B463D2B663136005E7230 /* Preview Assets.xcassets */; };
-		8C3B46452B66314D005E7230 /* PoolishRecipeFormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B46442B66314D005E7230 /* PoolishRecipeFormSection.swift */; };
-		8C3B46472B663154005E7230 /* QuickRecipeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B46462B663154005E7230 /* QuickRecipeForm.swift */; };
 		8C3B46492B6631C8005E7230 /* TextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B46482B6631C8005E7230 /* TextRow.swift */; };
 		8C3B464B2B6633C7005E7230 /* PoolishRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */; };
 		8C3B464D2B6635A3005E7230 /* QuickRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */; };
@@ -65,8 +63,6 @@
 		8C3B46382B663134005E7230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C3B463A2B663136005E7230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C3B463D2B663136005E7230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8C3B46442B66314D005E7230 /* PoolishRecipeFormSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolishRecipeFormSection.swift; sourceTree = "<group>"; };
-		8C3B46462B663154005E7230 /* QuickRecipeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRecipeForm.swift; sourceTree = "<group>"; };
 		8C3B46482B6631C8005E7230 /* TextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRow.swift; sourceTree = "<group>"; };
 		8C3B464A2B6633C7005E7230 /* PoolishRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolishRecipe.swift; sourceTree = "<group>"; };
 		8C3B464C2B6635A3005E7230 /* QuickRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRecipe.swift; sourceTree = "<group>"; };
@@ -133,16 +129,12 @@
 		8C3B46352B663134005E7230 /* PizzaCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				8CA35B892B8A5D7E00C17945 /* Views */,
 				8CA35B822B8887EB00C17945 /* Models */,
 				8CA35B642B887D9600C17945 /* PizzaCalculator.entitlements */,
 				8CA35B5F2B886C1200C17945 /* Extensions */,
 				8CA35B5A2B88672F00C17945 /* Managers */,
 				8C3B46362B663134005E7230 /* PizzaCalculatorApp.swift */,
-				8C3B46382B663134005E7230 /* ContentView.swift */,
-				8CA35B582B8866B500C17945 /* ContentView-ViewModel.swift */,
-				8C3B46442B66314D005E7230 /* PoolishRecipeFormSection.swift */,
-				8C3B46462B663154005E7230 /* QuickRecipeForm.swift */,
-				8C3B46482B6631C8005E7230 /* TextRow.swift */,
 				8C3B463A2B663136005E7230 /* Assets.xcassets */,
 				8C3B463C2B663136005E7230 /* Preview Content */,
 			);
@@ -214,6 +206,16 @@
 				8CA35B862B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		8CA35B892B8A5D7E00C17945 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C3B46482B6631C8005E7230 /* TextRow.swift */,
+				8C3B46382B663134005E7230 /* ContentView.swift */,
+				8CA35B582B8866B500C17945 /* ContentView-ViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +325,6 @@
 				8CA35B5C2B88674300C17945 /* NotificationManager.swift in Sources */,
 				8CA35B872B88FD0D00C17945 /* PizzaLiveTimerAttributes.swift in Sources */,
 				8CA35B632B88795000C17945 /* UserDefaultsManager.swift in Sources */,
-				8C3B46452B66314D005E7230 /* PoolishRecipeFormSection.swift in Sources */,
-				8C3B46472B663154005E7230 /* QuickRecipeForm.swift in Sources */,
 				8CA35B592B8866B500C17945 /* ContentView-ViewModel.swift in Sources */,
 				8C3B46392B663134005E7230 /* ContentView.swift in Sources */,
 				8CA35B612B886C2D00C17945 /* TimeIntervalExtensions.swift in Sources */,

@@ -32,4 +32,8 @@ final class NotificationManager {
         
         UNUserNotificationCenter.current().add(request)
     }
+    
+    static func cancelNotifications() -> Void {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+    }
 }

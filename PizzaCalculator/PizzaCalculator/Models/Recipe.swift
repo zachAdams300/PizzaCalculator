@@ -9,4 +9,6 @@ import Foundation
 
 protocol Recipe {
     static var instructions: [Instruction] { get }
+    var ingredients: [Ingredient] { get }
+    var numPizzas: Int { get set }
 }

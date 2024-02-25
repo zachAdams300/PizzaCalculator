@@ -9,6 +9,11 @@ import Foundation
 import ActivityKit
 import OSLog
 
+enum PizzaType: String, CaseIterable {
+    case poolish = "Poolish"
+    case quick = "Quick"
+}
+
 @MainActor
 final class ContentViewViewModel: ObservableObject {
     
@@ -35,21 +40,44 @@ final class ContentViewViewModel: ObservableObject {
     @Published var activityViewState: ActivityViewState? = nil
     @Published var errorMessage: String? = nil
     
+    @Published var numberOfPizzas: Int
+    @Published var poolishRecipe: PoolishRecipe
+    @Published var quickRecipe: QuickRecipe
+    
     private var currentActivity: Activity<PizzaLiveTimerAttributes>? = nil
+    
+    init() {
+        let savedNumPizzas = UserDefaultsManager.getNumPizzas()
+        let numPizzas = savedNumPizzas > 0 ? savedNumPizzas : 1
+        
+        numberOfPizzas = numPizzas
+        poolishRecipe = PoolishRecipe(numPizzas: numPizzas)
+        quickRecipe = QuickRecipe(numPizzas: numPizzas)
+    }
+    
+    func changeNumPizzas(_ newNumPizzas: Int) {
+        poolishRecipe = PoolishRecipe(numPizzas: newNumPizzas)
+        quickRecipe = QuickRecipe(numPizzas: newNumPizzas)
+    }
     
     func startBakingPizza() {
         UserDefaultsManager.setIsMakingPizza(true)
-        UserDefaultsManager.setCurrentStep(step: 0)
+        UserDefaultsManager.setCurrentStep(0)
     }
     
     func cancelBakingPizza() {
         UserDefaultsManager.setIsMakingPizza(false)
-        UserDefaultsManager.setCurrentStep(step: 0)
+        UserDefaultsManager.setCurrentStep(0)
+        NotificationManager.cancelNotifications()
+        
+        Task {
+            await endActivity()
+        } 
     }
     
     func showNextStep() {
         let currentStep = UserDefaultsManager.getCurrentStep()
-        UserDefaultsManager.setCurrentStep(step: currentStep + 1)
+        UserDefaultsManager.setCurrentStep(currentStep + 1)
     }
     
     func startPizzaButtonTapped(timeLeft: Double) {
@@ -77,6 +105,19 @@ final class ContentViewViewModel: ObservableObject {
 }
 
 private extension ContentViewViewModel {
+    
+    private func endActivity() async {
+        guard let activity = currentActivity else {
+            return
+        }
+        
+        let finalContent = PizzaLiveTimerAttributes.ContentState()
+        
+        let dismissalPolicy: ActivityUIDismissalPolicy = .immediate
+        
+        await activity.end(ActivityContent(state: finalContent, staleDate: nil), dismissalPolicy: dismissalPolicy)
+    }
+    
     func setup(withActivity activity: Activity<PizzaLiveTimerAttributes>) {
         self.currentActivity = activity
         
