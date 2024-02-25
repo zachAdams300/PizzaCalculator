@@ -12,27 +12,27 @@ class UserDefaultsManager {
     static let currentStepKey = "CurrentStep"
     static let numPizzasKey = "NumPizzas"
     
-    static func setIsMakingPizza(_ makingPizza: Bool) {
-        UserDefaults.standard.setValue(makingPizza, forKey: makingPizzKey)
+    static func setIsMakingPizza(_ makingPizza: Bool, userDefaults: UserDefaults = UserDefaults.standard) {
+        userDefaults.setValue(makingPizza, forKey: makingPizzKey)
     }
     
-    static func getIsMakingPizza() -> Bool {
-        UserDefaults.standard.bool(forKey: makingPizzKey)
+    static func getIsMakingPizza(userDefaults: UserDefaults = UserDefaults.standard) -> Bool {
+        userDefaults.bool(forKey: makingPizzKey)
     }
     
-    static func setCurrentStep(_ step: Int) {
-        UserDefaults.standard.setValue(step, forKey: currentStepKey)
+    static func setCurrentStep(_ step: Int, userDefaults: UserDefaults = UserDefaults.standard) {
+        userDefaults.setValue(step, forKey: currentStepKey)
     }
     
-    static func getCurrentStep() -> Int {
-        UserDefaults.standard.integer(forKey: currentStepKey)
+    static func getCurrentStep(userDefaults: UserDefaults = UserDefaults.standard) -> Int {
+        userDefaults.integer(forKey: currentStepKey)
     }
     
-    static func setNumPizzas(_ numPizzas: Int) {
-        UserDefaults.standard.setValue(numPizzas, forKey: numPizzasKey)
+    static func setNumPizzas(_ numPizzas: Int, userDefaults: UserDefaults = UserDefaults.standard) {
+        userDefaults.setValue(numPizzas, forKey: numPizzasKey)
     }
     
-    static func getNumPizzas() -> Int {
-        UserDefaults.standard.integer(forKey: numPizzasKey)
+    static func getNumPizzas(userDefaults: UserDefaults = UserDefaults.standard) -> Int {
+        userDefaults.integer(forKey: numPizzasKey)
     }
 }
